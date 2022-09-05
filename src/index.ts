@@ -411,7 +411,7 @@ function createLetter(scene: THREE.Scene, letters: HangingObject[], str: string)
     if (str.length != 1) return;
     const loader = new FontLoader()
     let letter: THREE.Mesh;
-    loader.load('../fonts/gentilis_bold.typeface.json', function (font) {
+    loader.load('fonts/gentilis_bold.typeface.json', function (font) {
         const geometry = new TextGeometry(str, {
             font: font,
             size: 1,
